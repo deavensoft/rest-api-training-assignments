@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "0c886a5b-0d4b-49ae-afcc-ec046604514f",
+		"name": "_OpenAPIWebServiceExample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15895232",
+		"_collection_link": "https://guidle.postman.co/workspace/Guidle~877b7f51-0951-4a1e-8f09-2245a066614f/collection/15895232-0c886a5b-0d4b-49ae-afcc-ec046604514f?action=share&source=collection_link&creator=15895232"
+	},
+	"item": [
+		{
+			"name": "Get ALL Persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/persons/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"persons",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Person",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v1/persons/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"persons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Petar Peric\",\r\n    \"age\": 31\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/persons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"persons"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
